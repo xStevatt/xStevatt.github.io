@@ -1,2 +1,2 @@
 # stefanovalloncini.com
-It's just a website. Well, my website. 
+It's just a website. Well, actually my website. 
