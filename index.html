@@ -52,9 +52,9 @@
     <!-- Nav - navbar of contents, used in the desktop version -->
     <nav id="nav">
       <ul>
-        <li><a href="#intro" class="active">About me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Achievements</a></li>
+        <li><a href="#intro" class="active">About me.</a></li>
+        <li><a href="#skills">Skills.</a></li>
+        <li><a href="#projects">ToDos.</a></li>
         <li><a href="#projects">Download my CV</a></li>
       </ul>
     </nav>
@@ -83,34 +83,24 @@
 
         <!-- Other entries can be added to the list of scopes and to the list of skills 
         The icons are from FontAwesome v5: choose one from their site and type its name to use it -->
-        <h2><i class="fas fa-code"></i><b>Languages and Frameworks</b></h2>
+        <h2><i class="fas fa-code"></i><b>Programming Skills.</b></h2>
         <ul class="features outline">
           <li>Java</li>
           <li>C/C++</li>
           <li>Javascript</li>
-          <li>Angular</li>
           <li>React</li>
-          <li>Python</li>
-          <li>HTML/css</li>
-          <li>SQL</li>
+          <li>HTML/CSS</li>
         </ul>
 
         <h2><i class="fas fa-laptop"></i><b>Softwares and platforms</b></h2>
         <ul class="features outline">
-          <li>Android Studio</li>
-          <li>Visual Studio</li>
-          <li>Eclipse</li>
-          <li>Adobe Photoshop</li>
-          <li>Adobe Lightroom</li>
-          <li>Adobe Illustrator</li>
-          <li>Sony Vegas</li>
-          <li>Linux bash</li>
+          <li>Paint</li>
         </ul>
 
         <h2><i class="fas fa-suitcase"></i><b>Languages</b></h2>
         <ul class="features outline">
-          <li>Italian Mothertongue</li>
-          <li>C1 English</li>
+          <li>Italian</li>
+          <li>English</li>
         </ul>
       </section>
 
@@ -118,7 +108,7 @@
       <section id="projects" class="main special">
         <header class="major">
           <h2><b>MY ACHIEVEMENTS</b></h2>
-          <p>My language certificates, experiences and projects.</p>
+          <p>All the things I have done and the ones I'm planning to do.</p>
         </header>
 
         <!-- A small description, an image and a link. Nothing more. Other entries can be added -->
@@ -187,9 +177,9 @@
         <!-- Some contact informations. Other informations can be added -->
         <dl class="alt">   
           <dt>Email</dt>
-          <dd><a href="mailto:stefanovalloncini01@gmail.com?Subject=Request">stefanovalloncini01@gmail.com</a></dd>      
+          <dd><a href="mailto:stefanovalloncini01@gmail.com?Subject=Request">stefanovalloncini@protonmail.com</a></dd>      
           <dt>City</dt>
-          <dd>Brescia, Italy</dd>
+          <dd><a href="https://www.google.it/maps/place/Brescia+BS/@45.5436018,10.1886594,13z/data=!3m1!4b1!4m5!3m4!1s0x4781766ea2b0294d:0x22cd4615476aea04!8m2!3d45.5415526!4d10.2118019">Brescia, Italy</a></dd>
           <dt>Social</dt>
           <dd>
             <ul class="icons">
@@ -231,15 +221,13 @@
     document.getElementById('experience').innerHTML = experience;
 
     // Assign the current year to the copyright line
-    document.getElementById('year').innerHTML = year;
+    document.getElementById('year').innerHTML = year; 
 
     if ((date.getMonth() + 1 < birthMonth && date.getDate() <= birthDay) || date.getMonth() < birthMonth)
       year--;
     age = year - birthYear;
     // The initial description. It is meant to be modified freely
-    me = "I'm Stefano, a 17-years-old nerdy folk from Northen Italy. I first became interested in coding when I was 13; at the time, I was learning Python following YouTube videos... these were good times! " + 
-         "I've also coded a few mods for my favourite game Counter-Stirke some of which were on sale, and gave me the chance to make some money. " + 
-         "Finally, in high school, I started studying computer science, which eventually led me to apply to a computer engineering degree at University. "; 
+    me = "This website is under construction, but your presence is still highly appreciated";  
 
     document.getElementById('me').innerHTML = me;
   </script>
