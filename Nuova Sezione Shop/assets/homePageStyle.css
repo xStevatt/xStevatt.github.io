@@ -1,0 +1,207 @@
+
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+header {
+  font-family: Raleway;
+  margin: 0 auto;
+  padding: 35px;
+  text-align: center;
+  background: #555;
+  width:auto;
+  
+}
+
+header h1 {
+  color: #AAA;
+  font-size: 40px;
+  font-weight: lighter;
+  margin-bottom: 5px;
+}
+header h1:hover {
+  color:black;
+}
+header span {
+  color: #222;
+}
+
+
+ul {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  padding-left: 0;
+  list-style: none;
+}
+
+@media (max-width: 320px) {
+  ul {
+    text-align: left;
+    padding: 5px;
+  }
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  padding: 16px 16px 16px 0;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  transition: color 1s ease;
+}
+
+nav {
+  display: block;
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  z-index: 2;
+  padding-bottom: 27px;
+  background-color: #162a33;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+@media (max-width: 320px) {
+  nav {
+    padding-bottom: 27px;
+  }
+}
+
+li:hover a{
+  color: #ff0000;
+}
+
+.description
+{
+  font-size: 15px;
+  color: #fff;
+}
+
+.foto{
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+}
+
+.foto2{
+  background-color: #000;
+}
+
+/* Row layout */
+
+
+.row {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  clear: both;
+  background: #000;
+}
+
+
+/*************************/
+
+/* Columns layout */
+
+
+.column {
+  width: 33%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+}
+
+/*****************************************/
+
+/* Background images and style */
+
+
+.row .column {
+  opacity: 0.4;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.picture1 
+{
+  background-image: url("../images/woman.jpg");
+}
+
+.picture2 
+{
+  background-image: url("../images/kid.jpg");
+}
+
+.picture3 
+{
+  background-image: url("../images/man.jpg");
+}
+
+.column .text {
+  position: relative;
+  top: 60%;
+  left: 50%;
+  width: 50%;
+  margin-left: -25%;
+}
+
+.text {
+  text-align: center;
+  font-family: arial;
+  font-size: 32px;
+  color: #fff;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+
+/************************/
+
+/* Animation */
+
+
+.row .column {
+  transition: 1s;
+}
+
+.row:hover .column {
+  width: 20%;
+}
+
+.row:hover .column:hover {
+  width: 60%;
+}
+
+.column:hover {
+  opacity: 1;
+}
+
+.column:hover .text {
+  transition: ease-in .9s;
+  transform: none;
+  font-size: 22px;
+}
+
+.column:not( :hover ) .text {
+  transition: ease-out .9s;
+}
